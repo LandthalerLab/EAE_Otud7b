@@ -9,4 +9,3 @@ xeniumranger resegment --expansion-distance 10 --xenium-bundle $nameOfInputFolde
 # Step 2: Merging individual samples
 The samples were defined as individual field of view when initiating the Xenium run. 
 
-/Volumes/fast/AG_Landthaler/emanuel/spatial/20240207__142420__Landthaler_mouse_brain_ID_QZD68C/dist10_d0_WT1/

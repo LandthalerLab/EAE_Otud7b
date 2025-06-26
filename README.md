@@ -2,9 +2,8 @@
 
 This repository contains the code used for analyzing the newly generated spatial transcriptomics data, as well as reanalysis of published bulk/single-nucleus RNA-sequencing.
 
-# Step 1: Resegmentation
-Since the default nuclear expansion of 15 µm turned out to lead to fuzzy clustering of the cells, all samples were resegmented with 10 µm nuclear expansion radius using XeniumRanger 1.7 (Software from 10x Genomics), as following:
-xeniumranger resegment --expansion-distance 10 --xenium-bundle $nameOfInputFolder --id dist10_"$outputName" --localmem 90 --localcores 1
+# Step 1: Collect and merge data
+The samples were defined as individual field of view when initiating the Xenium run. In the first step, we read in all the output folders as they came from the Xenium device, and merge the individual samples to a day 0 and a day 15 object.
 
 # Step 2: Merging individual samples
 The samples were defined as individual field of view when initiating the Xenium run. 

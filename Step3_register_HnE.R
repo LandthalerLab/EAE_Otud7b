@@ -1,4 +1,4 @@
-#Step3_register_HnE.R
+#Step 3
 
 options(rgl.useNULL=TRUE)
 
@@ -85,7 +85,7 @@ vrImages(all_d0[["Assay12"]], name = "main", channel = "H&E") <-  vrImages(imgda
 rm(d0_KO3)
 
 
-saveRDS(all_d0, "all_d0_mols_reg.rds")
+saveRDS(all_d0, "all_d0_mols_celltypeann_reg.rds")
 
 
 #Export images in lower resolution for having a quick look
@@ -96,7 +96,7 @@ for (the_assay in unique(vrImageChannelNames(all_d0)$Assay)) {
 
 
 
-all_d15 <- readRDS("all_d15_mols.rds")
+all_d15 <- readRDS("all_d15_mols_celltypeann.rds")
 
 #Register H&E images done on the slides following the Xenium run
 #Check assay and sample names
@@ -167,7 +167,7 @@ vrImages(all_d15[["Assay11"]], name = "main", channel = "H&E") <-  vrImages(imgd
 vrImages(all_d15[["Assay12"]], name = "main", channel = "H&E") <-  vrImages(imgdata_reg, assay = "Assay1", name = "main_reg")
 rm(d15_KO3_slice2)
 
-saveRDS(all_d15, "all_d15_mols_reg.rds")
+saveRDS(all_d15, "all_d15_mols_celltypeann_reg.rds")
 
 #Export images in lower resolution for having a quick look
 for (the_assay in c("Assay1", "Assay2", "Assay3", "Assay4", "Assay5", "Assay6", "Assay7", "Assay8", "Assay9", "Assay10", "Assay11", "Assay12")) {

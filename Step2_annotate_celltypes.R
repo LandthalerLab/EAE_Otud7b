@@ -1,4 +1,4 @@
-#Step1_read_merge_data.R
+#Step 2
 
 options(rgl.useNULL=TRUE)
 

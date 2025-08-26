@@ -21,3 +21,9 @@ In this step, manual image registration for the H&E images was performed. The H&
 
 # Step 4: annotating regions and lesion
 For the sections from day 0, we annotated only dorsal and ventral regions, which can be later used for differential expression analysis. For day 15, we annotated lesion. This was done as following – first, groups of T cells are defined, however not based on the celltype definition from above but based on whether they expression T cell marker genes (Cd3e, Cd4, Cd8a). In order to form a group, at least n cells have to be within k µm (variables intra_lesion_distance and min_group_size). T cells outside of such groups are in "small clusters" and not taken into account. Second, the T cell groups are spatially expanded, i.e. proximal and distal regions are defined. At the end of this script, plots are generated with cells colored by lesion/region. However, these are not the lesions/regions that were used in the paper, as we subsequently visually examined these lesions in H&E staining. Some of the computationally defined lesions were excluded from analysis, and others merged into larger lesions. Our annotation can be transfered from the objects available on GEO. 
+
+# Step 5: prepare plots
+Shows how the spatial transcriptomics plots used in the manuscript were prepared.
+
+# Step 6: reanalysis of published data (Fig. 1A)
+For Fig. 1A, published single-nucleus sequencing data from MS was reanalyzed as described here.
